@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Twitch Streamers</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='css/dashboard.css')}}}" rel="stylesheet">
+</head>
+<body>
+
+{%include 'header.html'%}
+
+<div class="container-fluid" style="background-image: url('/static/img/TwitchLogo.jpg');">
+    <div class="row">
+        <main class="col-md-1 ms-sm-auto col-lg-12 px-md-12">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {%include'pepepopo1.html'%}
+                </div>
+
+                <div class="col-md-6">
+                    {%include'pepepopo2.html'%}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    {%include'pepepopo3.html'%}
+                </div>
+                <div class="col-md-6">
+                    {%include'pepepopo4.html'%}
+                </div>
+            </div>
+            <br>
+            <div class="col-md-12">
+                {%include'pepepopo5.html'%}
+            </div>
+            <br>
+            <div class="col-md-12">
+                {%include'pepepopo6.html'%}
+            </div>
+
+        </main>
+    </div>
+</div>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
